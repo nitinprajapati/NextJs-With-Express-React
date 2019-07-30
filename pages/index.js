@@ -10,7 +10,7 @@ class ImageList extends PureComponent {
         const res = await fetch('https://jsonplaceholder.typicode.com/photos');
         const json = await res.json();
         return {
-            plp : [...json.splice(0, 10)]
+            plp : [...json.splice(0, 100)]
         }
     }
 
